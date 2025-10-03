@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Histoire & Preuves</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, sans-serif;
+      background: #212121; /* gris foncé style ChatGPT */
+      color: #ececf1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 850px;
+      padding: 20px;
+    }
+
+    /* --- Barre d’onglets --- */
+    nav {
+      display: flex;
+      background: #2a2b32;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+
+    nav button {
+      flex: 1;
+      background: none;
+      border: none;
+      color: #ececf1;
+      padding: 14px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: 0.3s;
+    }
+
+    nav button:hover {
+      background: #343541;
+    }
+
+    nav button.active {
+      background: #40414f;
+      font-weight: 600;
+    }
+
+    /* --- Contenu --- */
+    .tab-content {
+      display: none;
+      background: #2a2b32;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      animation: fadeIn 0.3s ease-in;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    h2 {
+      margin-bottom: 12px;
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    .box {
+      background: #343541;
+      padding: 16px;
+      border-radius: 8px;
+      margin-bottom: 12px;
+      line-height: 1.5;
+    }
+
+    /* --- Liste membres --- */
+    .member-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .member-list li {
+      background: #343541;
+      padding: 12px;
+      border-radius: 6px;
+      margin-bottom: 8px;
+      font-size: 0.95rem;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .member-list li span {
+      color: #ff4d4d;
+      font-weight: 600;
+    }
+
+    /* --- Screens grid --- */
+    .screens-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+    }
+
+    .screens-grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      background: #212121;
+      border: 2px solid #343541;
+      object-fit: cover;
+    }
+
+    footer {
+      text-align: right;
+      width: 100%;
+      max-width: 850px;
+      padding: 10px;
+      font-size: 0.85rem;
+      color: #aaa;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+      }
+      nav button {
+        border-bottom: 1px solid #212121;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Onglets -->
+    <nav>
+      <button class="tab-btn active" onclick="openTab('histoire')">Histoire</button>
+      <button class="tab-btn" onclick="openTab('screens')">Screens</button>
+      <button class="tab-btn" onclick="openTab('membres')">Membres</button>
+      <button class="tab-btn" onclick="openTab('menaces')">Menaces</button>
+    </nav>
+
+    <!-- Histoire -->
+    <section id="histoire" class="tab-content active">
+      <h2>Histoire</h2>
+      <div class="box">
+        <p>
+          L'affaire débute après la publication d'une vidéo YouTube par BLZ. Une personne liée à cette vidéo a, environ un an plus tard, cherché à se venger en essayant de doxxer BLZ. Cette personne m'a cependant confondu avec BLZ, et c'est moi qui ai été doxxé.
+Par la suite, j'ai reçu des insultes et de nombreuses menaces : menaces de mort, menaces de viol, menaces de swatting, ainsi que des tentatives de spoofing visant le compte de ma mère (ils avaient trouvé son Instagram).
+Après une longue confrontation, ils ont finalement réalisé leur erreur — ce n'était pas BLZ. Néanmoins, les agressions ont continué : on m'a envoyé des images menaçantes et d'autres messages intimidants que je n'ai pas diffusés.
+<br>    <strong>JE TIENS À DIRE QUE CETTE PERSONNE EST SPIRIT, LE MANIPULATEUR (LE CHEF), ET QUE BELLIDJINN EST CELUI QUI DOXXE LES GENS.</strong>
+</p>
+
+    <br>
+        <p>
+          Après avoir regardé plusieurs vidéos, j’ai identifié certaines personnes impliquées. Pour enquêter, j’ai fait semblant d’entrer dans leur jeu en envoyant l’image d’une fausse personne ; ils m’ont alors tenu des propos menaçants (ex. : « même le dieu grec n’est pas comme ça »).
+Par la suite, j’ai pu retrouver le Discord de chaque personne concernée. Dans les éléments que j’ai collectés figurent notamment : une image d’un des agresseurs et une photo d’une des personnes impliquées.
+J’ai également constaté que ces personnes détenaient des informations personnelles concernant une personne appelée « Punishier ». Je ne divulguerai pas ces informations ici, mais elles comprennent des éléments sensibles tels que : nom et prénom, adresse e-mail privée, code postal, numéro de téléphone et d’autres données personnelles.
+        </p>
+        <br>
+        <p>
+            Version formelle / claire (pour plainte ou partage sérieux)
+Une seule personne est concernée par ces informations sensibles : elle a envoyé un message à « Punisheur » et peut être reconnue en le lisant. Je précise que les auteurs sont dangereux. N’étant pas résident en France, je ne peux pas engager de procédure pénale contre eux.
+Si vous êtes victime : déposez plainte si possible, conservez des captures d’écran comme preuves et ne divulguez jamais votre image ou vos informations personnelles à ces prédateurs.
+        </p>
+      </div>
+    </section>
+
+    <!-- Screens -->
+    <section id="screens" class="tab-content">
+      <h2>Screens</h2>
+      <div class="screens-grid">
+        <img src="preuv1.webp" alt="Preuve 1">
+        <img src="preuve2.webp" alt="Preuve 2">
+        <img src="preuve3.webp" alt="Preuve 3">
+        <img src="preuve4.webp" alt="Preuve 4">
+        <img src="preuve5.png" alt="Preuve 5">
+        <img src="preuve6.png" alt="Preuve 6">
+        <img src="preuve7.png" alt="Preuve 7">
+        <img src="preuve 8.png" alt="Preuve 8">
+        <img src="preuv9.png" alt="Preuve 9">
+      </div>
+    </section>
+
+    <!-- Membres -->
+    <section id="membres" class="tab-content">
+      <h2>Membres & IDs</h2>
+      <ul class="member-list">
+        <li><span>Lumix</span> <span>997862569077383309</span></li>
+        <li><span>Adonis</span> <span>1393268543033704468</span></li>
+        <li><span>Agent Flocko</span> <span>1314326621662220339</span></li>
+        <li><span>Spirit</span> <span>1419696663974514720</span></li>
+        <li><span>Draco</span> <span>1420555316621480108</span></li>
+        <li><span>Le Trou De la bit</span> <span>1378491061692797122</span></li>
+        <li><span>Bellidjinn</span> <span>1406976609583628309</span></li>
+        <li><span>0xpolitsia1</span> <span>1399872764600516729</span></li>
+        <li><span>MypiXX</span> <span>1267925509036314697</span></li>
+      </ul>
+    </section>
+
+    <!-- Menaces -->
+    <section id="menaces" class="tab-content">
+      <h2>Menaces</h2>
+      <div class="box">
+        <p>
+          • Menaces de mort <br>
+          • Menaces de viol <br>
+          • Spoof de ma mère <br>
+          • Swat possible <br>
+          • Autres infos personnelles récupérées
+        </p>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    Créé par une victime
+  </footer>
+
+  <script>
+    function openTab(tabId) {
+      document.querySelectorAll('.tab-content').forEach(tab => {
+        tab.classList.remove('active');
+      });
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.remove('active');
+      });
+      document.getElementById(tabId).classList.add('active');
+      event.target.classList.add('active');
+    }
+  </script>
+</body>
+</html>
